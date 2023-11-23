@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>User Registe Form</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+		#frm {
+			width: 500px;
+			margin: auto;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+
+<body class="container-fluid ">
+	<marquee>
+		<h2 class="text-primary" style="margin-top: 10px;">Register Here</h2>
+	</marquee>
+	<form action="register" method="post" class="form card" id="frm">
+		<h1 class="bg-danger text-white text-center card-header">Register Form</h1>
+		<table class="table table-hover">
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="userName" required></td>
+				</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email" required></td>
+			</tr>
+			<tr>
+				<td>Mobile Number</td>
+				<td><input type="text" name="mobileNumber" required></td>
+			</tr>
+			<tr>
+				<td>Date of Birth</td>
+				<td><input type="date" name="Dob" required></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="Male" required>Male &nbsp;
+					<input type="radio" name="gender" value="Female" required>Female
+				</td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><select name="city">
+						<option value="India">India</option>
+						<option value="Pune">Pune</option>
+						<option value="Chennai">Chennai</option>
+						<option value="Thiruvannamalai">Thiruvannamalai</option>
+					</select></td>
+			</tr>
+			<tr class="card-footer">
+				<td><input type="submit" class="btn btn-outline-success" value="register"></td>
+				<td><input type="reset" class="btn btn-outline-danger" value="clear"></td>
+			</tr>
+		</table>
+		<a href='showData' class='btn btn-outline-primary'>show Data</a>
+
+	</form align="center">
+</body>
+
+</html>
